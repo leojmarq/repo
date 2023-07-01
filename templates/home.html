@@ -3,11 +3,11 @@
 {% block content %} 
 
     {% for post in post_list %}
-        <h2><a href="{% url 'port_detail_view' post.pk %}">{{ post.title }}</a></h2>
+        <h2><a href="{% url 'post_detail_view' post.pk %}">{{ post.title }}</a></h2>
         <p>{{ post.body }}</p>
 
     {% endfor %}
 
 {% endblock content %}
 model = Post
-template_name = 'port_detail_view.html'
+template_name = 'post_detail_view.html'
